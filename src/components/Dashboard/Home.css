@@ -1,0 +1,43 @@
+.dash-home-container{
+    position: relative;
+    display: flex;
+    width: 83vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f8f7;
+}
+
+.dash-home-navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.SearchOutlinedIcon{
+    position: absolute;
+    margin-left: 5px;
+}
+
+.dash-home-searchbar{
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+}
+
+.dash-home-title{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.dash-product-section{
+    width: 73vh;
+    padding: 40px;
+    background-color: #f6f5f3;
+}
