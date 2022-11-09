@@ -1,0 +1,22 @@
+.add-product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.add-product-form{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    padding: 80px 40px 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ap-form-input{
+    width: 360px;
+    padding: 10px;
+}
