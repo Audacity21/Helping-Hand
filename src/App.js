@@ -1,17 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './components/Home';
-import AddProduct from './components/AddProduct';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./components/Login/Login";
+import AddProduct from "./components/Products/AddProduct";
+import ViewProducts from "./components/Products/ViewProducts";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/addproduct" exact component={AddProduct} />
+        <Route exact path="/"><Login /></Route>
+        <Route exact path="/addproduct"><AddProduct /></Route>
+        <Route exact path="/viewproduct"><ViewProducts /></Route>
       </Switch>
-    </BrowserRouter>
-  )
+    </Router>
+  );
 }
 
 export default App;
