@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -38,12 +39,12 @@ public class CartResource {
 
 	     return ResponseEntity.created(location).build();
     }
-	@DeleteMapping("/cart/{id}")
-    public void deleteProducts(@PathVariable int id) {
-        cr.deleteById(id);
+	@DeleteMapping("/cart/{cid}")
+    public void deleteProducts(@PathVariable int cid) {
+        cr.deleteById(cid);
     }
-	@DeleteMapping("/cart/{email}")
-    public void deleteProductsEmail(@PathVariable String email) {
+	@DeleteMapping("/cart")
+    public void deleteProductsEmail(@RequestParam(value="email") String email) {
         List<Cart> c = cr.findAll();
         for(Cart l: c) {
         	if(l.getEmail().equals(email)) {
@@ -54,13 +55,7 @@ public class CartResource {
 	
 	@GetMapping("/cart/{email}")
     public List<Cart> retrieveProduct(@PathVariable String email) {
-        List<Cart> l = cr.findAll();
-        for(Cart w: l) {
-        	if(!w.getEmail().equals(email)) {
-        		l.remove(w);
-        	}
-        }
-        return l;
+        return cr.getItemsbyEmail(email);
     }
 	
 	@GetMapping("/cartSum/{email}")

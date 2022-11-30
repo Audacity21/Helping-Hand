@@ -46,12 +46,6 @@ public class WishlistResource {
 	
 	@GetMapping("/wishlist/{email}")
     public List<Wishlist> retrieveProduct(@PathVariable String email) {
-        List<Wishlist> l = wr.findAll();
-        for(Wishlist w: l) {
-        	if(!w.getEmail().equals(email)) {
-        		l.remove(w);
-        	}
-        }
-        return l;
+        return wr.getItemsbyEmail(email);
     }
 }
