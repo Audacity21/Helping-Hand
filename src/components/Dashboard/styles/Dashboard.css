@@ -1,0 +1,12 @@
+.dashboard-container {
+    display: flex;
+}
+
+.dashboard-navbar{
+    float: left;
+    position: fixed;
+}
+
+.dashboard-body{
+    float: right;
+}

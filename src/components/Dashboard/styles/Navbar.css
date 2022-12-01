@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe:ital@1&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@100&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #f6f5f3;
+}
+
+.navbar-container
+{
+    position: relative;
+}
+
+.navbar-container .navbar-navigation
+{
+    position: relative;
+    width: 17vw;
+    height: 100vh;
+    background: #713882;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.navbar-container .navbar-navigation h1 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: lighter;
+}
+
+.navbar-container .navbar-navigation.active
+{
+    width: 10vw;
+}
+
+.navbar-container .navbar-navigation ul
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.navbar-container .navbar-navigation ul li
+{
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar-container .navbar-navigation ul li:hover
+{
+    background: #774187;
+}
+
+.navbar-container .navbar-navigation ul li a
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+}
+.navbar-container .navbar-navigation ul li a .navbar-icon
+{
+    position: relative;
+    display: block;
+    min-width: 80px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navbar-container .navbar-navigation ul li a .navbar-icon .fa
+{
+    font-size: 24px;
+}
+
+.navbar-container .navbar-navigation ul li a .navbar-title
+{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
