@@ -32,3 +32,24 @@ View Products: <br />
 View Orders: <br />
 ![image](https://user-images.githubusercontent.com/74983916/206830655-51febcf4-0450-463a-b3ec-1a7bc64c2c68.png)
 
+## Project installation guide
+
+**1. Set up the server first**
+ - Go to the server directory [here](https://github.com/Audacity21/Helping-Hand/tree/server)
+ - Download the files and import it into Eclipse IDE
+ - Update the Maven project
+ - Change the configurations in the application.properties file
+ - Make sure Spring Boot is installed in the IDE
+ - Run the project as Spring Boot App
+
+**2. Set up the Front-end**
+ - Pull the project to VS Code or any code editor from this [branch](https://github.com/Audacity21/Helping-Hand/tree/client)
+ - Make sure NodeJS is installed on the system
+ - Open the terminal and run `npm i`
+ - Run `npm start` to run the server
+ - The project will be run
+**For running the admin, follow the same procedure**
+
+## Contribution Guide
+
+You are free to make some productive changes to the project, I'll be reviewing all the PR's before merging it into the repository. **Make sure you do not edit the main branch.** Contributions in the front-end department would be highly appreciated.
